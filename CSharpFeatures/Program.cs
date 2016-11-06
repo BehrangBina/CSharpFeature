@@ -19,6 +19,8 @@ namespace CSharpFeatures
             LoopDemo.DoWhileSample(10);
             Console.WriteLine();
             LoopDemo.WhileBreak(100);
+            //== Implicit Cast by Check
+            ImplicitCast.CheckUncheck();
             Console.Read();
         }
     }

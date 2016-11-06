@@ -26,7 +26,7 @@ namespace CSharpFeatures
 
         public static void WhileBreak(int value)
         {
-            Console.Write($"Value: {value} loop breaks at 6");
+            Console.Write($"Value: {value} loop breaks at 6 | ");
             var i = 1;
             while (i<value)
             {
