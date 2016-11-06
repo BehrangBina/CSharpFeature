@@ -13,6 +13,8 @@ namespace CSharpFeatures
         {
             IncrementDecrement.Increment(10);
             IncrementDecrement.Decrement(10);
+            Console.WriteLine(TernaryOperator.GreaterThanValue(5, 10));
+            Console.WriteLine(TernaryOperator.LessThanValue(5, 5));
             Console.Read();
         }
     }
