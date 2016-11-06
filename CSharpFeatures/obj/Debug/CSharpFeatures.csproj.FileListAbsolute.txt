@@ -1,1 +1,6 @@
 D:\projects\CSharpFeatures\CSharpFeatures\bin\Debug\CSharpFeatures.exe.config
+D:\projects\CSharpFeatures\CSharpFeatures\bin\Debug\CSharpFeatures.exe
+D:\projects\CSharpFeatures\CSharpFeatures\bin\Debug\CSharpFeatures.pdb
+D:\projects\CSharpFeatures\CSharpFeatures\obj\Debug\CSharpFeatures.csprojResolveAssemblyReference.cache
+D:\projects\CSharpFeatures\CSharpFeatures\obj\Debug\CSharpFeatures.exe
+D:\projects\CSharpFeatures\CSharpFeatures\obj\Debug\CSharpFeatures.pdb
