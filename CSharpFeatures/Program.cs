@@ -15,6 +15,10 @@ namespace CSharpFeatures
             IncrementDecrement.Decrement(10);
             Console.WriteLine(TernaryOperator.GreaterThanValue(5, 10));
             Console.WriteLine(TernaryOperator.LessThanValue(5, 5));
+            //SwitchGoto.PrintFive(0);
+            LoopDemo.DoWhileSample(10);
+            Console.WriteLine();
+            LoopDemo.WhileBreak(100);
             Console.Read();
         }
     }
