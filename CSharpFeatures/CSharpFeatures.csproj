@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumSample.cs" />
     <Compile Include="ImplicitCast.cs" />
     <Compile Include="IncrementDecrement.cs" />
     <Compile Include="LoopDemo.cs" />

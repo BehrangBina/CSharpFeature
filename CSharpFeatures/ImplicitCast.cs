@@ -28,7 +28,6 @@ namespace CSharpFeatures
             {
                 destinationVar = unchecked ((byte)sourceVar);
                 Console.WriteLine($"destinationVar val: {destinationVar}");
-
             }
         }
     }

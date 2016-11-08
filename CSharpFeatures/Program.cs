@@ -21,6 +21,11 @@ namespace CSharpFeatures
             LoopDemo.WhileBreak(100);
             //== Implicit Cast by Check
             ImplicitCast.CheckUncheck();
+            //enum
+            
+            var  directionByte = (byte)Orientation.West;
+            Console.WriteLine($"{Orientation.West} - {directionByte}");
+
             Console.Read();
         }
     }
