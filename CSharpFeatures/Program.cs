@@ -22,11 +22,21 @@ namespace CSharpFeatures
             //== Implicit Cast by Check
             ImplicitCast.CheckUncheck();
             //enum
-            
             var  directionByte = (byte)Orientation.West;
             Console.WriteLine($"{Orientation.West} - {directionByte}");
+            //strut
+            route myRoute;
+            myRoute.direction = Orientation.East;
+            myRoute.distance=5.4;
+            Console.WriteLine($"{myRoute.direction} - {myRoute.distance}");
+            // multi array
+            int[,] twoArray = { { 1, 2, 3, 4 }, { 2, 3, 4, 5 }, { 3, 4, 5, 6 } };
+            MultiDimensionalArray.PrintTwoDimension(twoArray);
+
 
             Console.Read();
         }
+
+
     }
 }
