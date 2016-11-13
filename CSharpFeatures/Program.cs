@@ -32,7 +32,9 @@ namespace CSharpFeatures
             // multi array
             int[,] twoArray = { { 1, 2, 3, 4 }, { 2, 3, 4, 5 }, { 3, 4, 5, 6 } };
             MultiDimensionalArray.PrintTwoDimension(twoArray);
-
+            // String pad left right
+            StringManuplation.Pad("Aligned",8);
+          
 
             Console.Read();
         }

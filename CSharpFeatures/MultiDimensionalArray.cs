@@ -19,7 +19,12 @@ namespace CSharpFeatures
         }
         public static void PrintThreeDimension(int[,,] threeDimensionArray)
         {
-            
+            foreach (var height in threeDimensionArray)
+            {
+                Console.Write("{0},", height);
+
+            }
+            Console.WriteLine();
         }
     }
 }
