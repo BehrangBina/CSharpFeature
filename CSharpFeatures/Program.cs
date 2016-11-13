@@ -19,6 +19,7 @@ namespace CSharpFeatures
             LoopDemo.DoWhileSample(10);
             Console.WriteLine();
             LoopDemo.WhileBreak(100);
+            LoopDemo.ReturnContinue();
             //== Implicit Cast by Check
             ImplicitCast.CheckUncheck();
             //enum
@@ -34,7 +35,11 @@ namespace CSharpFeatures
             MultiDimensionalArray.PrintTwoDimension(twoArray);
             // String pad left right
             StringManuplation.Pad("Aligned",8);
-          
+            // Param Array
+            Console.WriteLine("======== Param Array can be value or no value ========");
+            var sum = ParamArrays.SumVals(1, 5, 2, 9, 8);
+            Console.WriteLine($"Summed Values = {sum}");
+            Console.WriteLine($"Summed Values = {ParamArrays.SumVals()}");
 
             Console.Read();
         }

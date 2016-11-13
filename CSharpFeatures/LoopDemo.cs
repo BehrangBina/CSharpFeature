@@ -28,12 +28,32 @@ namespace CSharpFeatures
         {
             Console.Write($"Value: {value} loop breaks at 6 | ");
             var i = 1;
-            while (i<value)
+            while (i < value)
             {
                 if (i == 6)
                     break;
                 Console.Write($"{i++}, ");
             }
+        }
+
+        public static void ReturnContinue()
+        {
+            Console.WriteLine(" 1-10, continue at 5");
+            for (var i = 1; i < 11; i++)
+            {
+                if (i == 5) continue;
+                Console.Write($"{i}, ");
+
+            }
+            Console.WriteLine();
+
+            Console.WriteLine(" 1-10, return at 5");
+            for (var i = 1; i < 11; i++)
+            {
+                if (i == 5) return;
+                Console.Write($"{i}, ");
+            }
+            Console.WriteLine();
         }
     }
 }
