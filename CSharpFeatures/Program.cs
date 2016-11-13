@@ -40,6 +40,16 @@ namespace CSharpFeatures
             var sum = ParamArrays.SumVals(1, 5, 2, 9, 8);
             Console.WriteLine($"Summed Values = {sum}");
             Console.WriteLine($"Summed Values = {ParamArrays.SumVals()}");
+            // Ref Val
+            Console.WriteLine("======== By val By Ref ========");
+            ReferenceAndValue.ByValue(5);
+            //out param 
+            Console.WriteLine("======== Outparam ========");
+            int[] myArray = { 1,5,4,3,2};
+            int maxIndex;
+            Console.WriteLine($"The maximum value in myArray is {OutParameters.MaxValue(myArray, out maxIndex)}");
+            Console.WriteLine($"The first occurrence of this value is at element { maxIndex + 1}");
+
 
             Console.Read();
         }
