@@ -49,6 +49,12 @@ namespace CSharpFeatures
             int maxIndex;
             Console.WriteLine($"The maximum value in myArray is {OutParameters.MaxValue(myArray, out maxIndex)}");
             Console.WriteLine($"The first occurrence of this value is at element { maxIndex + 1}");
+            //
+            string dir, name;
+            OutParameters.SplitPath("c:\\Windows\\System\\hello.txt", out dir, out name);
+            Console.WriteLine(dir);
+            Console.WriteLine(name);
+            //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
             Console.Read();

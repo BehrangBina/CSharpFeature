@@ -17,5 +17,19 @@
             }
             return maxVal;
         }
+
+        public static void SplitPath(string path, out string dir, out string name)
+        {
+            var length = path.Length;
+            while (length > 0)
+            {
+                var ch = path[length - 1];
+                if (ch == '\\' || ch == '/' || ch == ':') break;
+                length--;
+            }
+            dir = path.Substring(0, length);
+            name = path.Substring((length));
+
+        }
     }
 }
