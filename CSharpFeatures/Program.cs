@@ -1,9 +1,5 @@
 ﻿using System;
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace CSharpFeatures
 {
@@ -55,11 +51,27 @@ namespace CSharpFeatures
             Console.WriteLine(dir);
             Console.WriteLine(name);
             //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            //delegate
+            ProcessDelegate process;
+            Console.WriteLine("Enter 2 numbers separated with a comma:");
+            var input = Console.ReadLine();
+            if (input != null)
+            {
+                var commaPos = input.IndexOf(',');
+                var param1 = Convert.ToDouble(input.Substring(0, commaPos));
+                var param2 = Convert.ToDouble(input.Substring(commaPos + 1, input.Length - commaPos - 1));
+                Console.WriteLine("Enter M to multiply or D to divide:");
+                input = Console.ReadLine();
+                process = input == "M" ? new ProcessDelegate(Multiply) : new ProcessDelegate(Divide);
+                Console.WriteLine($"Result: {process(param1, param2)}");
+                Console.ReadKey();
 
-
-            Console.Read();
+            }
         }
+        static double Multiply(double param1, double param2) => param1*param2;
+        static double Divide(double param1, double param2) => param1/param2;
 
+        delegate double ProcessDelegate(double param1, double param2);
 
     }
 }
